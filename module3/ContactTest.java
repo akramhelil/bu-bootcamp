@@ -36,4 +36,16 @@ public class ContactTest {
     void toString_containsPhone() {
         assertTrue(contact.toString().contains("+1 617 555 0101"));
     }
+
+    @Test
+    void toString_containsBothNameAndPhone() {
+        String result = contact.toString();
+        assertTrue(result.contains("Ada Lovelace"));
+        assertTrue(result.contains("+1 617 555 0101"));
+    }
+
+    @Test
+    void toString_returnsNonEmptyString() {
+        assertFalse(contact.toString().isEmpty());
+    }
 }

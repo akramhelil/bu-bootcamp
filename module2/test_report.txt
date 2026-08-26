@@ -1,0 +1,4 @@
+Scores: [80, 90, 100]
+Average: 90.0
+High: 100
+Low: 80
