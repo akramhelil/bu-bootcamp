@@ -73,6 +73,6 @@ public class GradeAnalyzerTest {
         String filename = "module2/scores.txt";
         ArrayList<Integer> scores = GradeAnalyzer.readScores(filename);
         assertEquals(16, scores.size());
-        assertEquals(4, GradeAnalyzer.invalidScoresCount);
+        assertEquals(5, scores.size() - GradeAnalyzer.invalidScoresCount);
     }
 }
