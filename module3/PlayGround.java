@@ -1,4 +1,3 @@
-package module3;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map.Entry;
@@ -11,14 +10,14 @@ public class PlayGround {
 
         userRoles.put("Alice", "Admin");
         userRoles.put("Bob", "User");
-        userRoles.put("Charlie", "Moderator");  
+        userRoles.put("Charlie", "Moderator");
 
         String Role = userRoles.get("Bob");
         System.out.println("Bob's role is: " + Role);
 
         String nonExistentRole = userRoles.get("David");
         if (nonExistentRole == null) {
-            System.out.println("David's role is not found.");  
+            System.out.println("David's role is not found.");
         }
 
         boolean hasCharlie = userRoles.containsKey("Charlie");
@@ -31,15 +30,13 @@ public class PlayGround {
         HashSet<String> uniqueRoles = new HashSet<>(userRoles.values());
 
         System.out.println("Unique roles in the userRoles map: " + uniqueRoles);
-        
+
         // Stack<String> stack = new Stack<>();
         // stack.peek();
 
-
         isBalanced(")");
-        
-    }
 
+    }
 
     public static boolean isBalanced(String input) {
         Stack<Character> stack = new Stack<>();
